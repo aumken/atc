@@ -1,0 +1,416 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-04-09/2021-04-20/regionid/2 HTTP/1.1" 200 193638
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DSouth+Scotland&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 15:52:30] "GET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-20 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2020-04-09/2021-04-20/regionid/2 HTTP/1.1" 400 158
+ERROR:app:Failed to fetch Carbon Intensity data. Response: {"error": {  "code": "400 Bad Request",  "message": "The date range you have specified is greater than 60 days. Please select a smaller date range."  }}
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 15:52:33] "[35m[1mGET /combined-data?regionid=2&from_date=2020-04-09&to_date=2021-04-20 HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2020-04-09/2020-04-20/regionid/2 HTTP/1.1" 200 193898
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DSouth+Scotland&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 15:52:50] "GET /combined-data?regionid=2&from_date=2020-04-09&to_date=2020-04-20 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-04-09/2021-04-20/regionid/2 HTTP/1.1" 200 193638
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DSouth+Scotland&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 15:54:48] "GET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-20 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-04-09/2021-04-10/regionid/2 HTTP/1.1" 200 17926
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DSouth+Scotland&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 15:57:38] "GET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-10 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-04-09/2021-04-0/regionid/2 HTTP/1.1" 400 190
+ERROR:app:Failed to fetch Carbon Intensity data. Response: {"error": {  "code": "400 Bad Request",  "message": "Please enter a valid datetime in ISO8601 format YYYY-MM-DDThh:mmZ e.g. /regional/intensity/2018-02-01T15:30Z/2018-02-03T18:00Z"  }}
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 15:57:43] "[35m[1mGET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-0 HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-04-09/2021-04-09/regionid/2 HTTP/1.1" 400 171
+ERROR:app:Failed to fetch Carbon Intensity data. Response: {"error": {  "code": "400 Bad Request",  "message": "The start datetime should be less than the end datetime i.e. /intensity/2017-08-25T15:30Z/2017-08-27T17:00Z"  }}
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 15:57:45] "[35m[1mGET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-09 HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-04-09/2021-04-10/regionid/2 HTTP/1.1" 200 17926
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DSouth+Scotland&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 15:57:50] "GET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/aum/Desktop/atc/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+INFO:werkzeug: * Detected change in '/Users/aum/Desktop/atc/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2020-04-09/2020-04-20/regionid/2 HTTP/1.1" 200 193898
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DSouth+Scotland%3Bdate%3E%3D2020-04-09%3Bdate%3C%3D2020-04-20&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2020-04-09%3Bdate%3C%3D2020-04-20&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:02:33] "GET /combined-data?regionid=2&from_date=2020-04-09&to_date=2020-04-20 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2020-04-09/2020-04-10/regionid/2 HTTP/1.1" 200 18039
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DSouth+Scotland%3Bdate%3E%3D2020-04-09%3Bdate%3C%3D2020-04-10&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2020-04-09%3Bdate%3C%3D2020-04-10&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:02:39] "GET /combined-data?regionid=2&from_date=2020-04-09&to_date=2020-04-10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/aum/Desktop/atc/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:07:40] "[33mGET /combined-data?regionid=2&from_date=2020-04-09&to_date=2020-09-10 HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:07:48] "[33mGET /combined-data?regionid=2&from_date=2020-04-09&to_date=2020-09-10 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:07:52] "[33mGET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-10 HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/Users/aum/Desktop/atc/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+INFO:werkzeug: * Detected change in '/Users/aum/Desktop/atc/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-04-09/2021-04-10/regionid/2 HTTP/1.1" 200 17926
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DSouth+Scotland%3Bdate%3E%3D2021-04-09%3Bdate%3C%3D2021-04-10&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-04-09%3Bdate%3C%3D2021-04-10&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:08:19] "GET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/aum/Desktop/atc/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:08:33] "[33mGET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-10 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:08:34] "[33mGET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-10 HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/Users/aum/Desktop/atc/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-04-09/2021-04-10/regionid/2 HTTP/1.1" 200 17926
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DSouth+Scotland%3Bdate%3E%3D2021-04-09%3Bdate%3C%3D2021-04-10&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-04-09%3Bdate%3C%3D2021-04-10&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:08:45] "GET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/aum/Desktop/atc/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-04-09/2021-04-10/regionid/2 HTTP/1.1" 200 17926
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DSouth+Scotland%3Bdate%3E%3D2021-04-09%3Bdate%3C%3D2021-04-10&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-04-09%3Bdate%3C%3D2021-04-10&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:09:04] "GET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:09:07] "[31m[1mGET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-99 HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:09:14] "[31m[1mGET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-10-30 HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in '/Users/aum/Desktop/atc/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-04-09/2021-04-10/regionid/2 HTTP/1.1" 200 17926
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DSouth+Scotland%3Bdate%3E%3D2021-04-09%3Bdate%3C%3D2021-04-10&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+ERROR:app:Exception on /combined-data [GET]
+Traceback (most recent call last):
+  File "/Users/aum/Library/Python/3.10/lib/python/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/aum/Library/Python/3.10/lib/python/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/aum/Library/Python/3.10/lib/python/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/aum/Library/Python/3.10/lib/python/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/aum/Desktop/atc/app.py", line 133, in combined_data
+    covid_data = fetch_covid_data("region", area_name, from_date, to_date)
+  File "/Users/aum/Desktop/atc/app.py", line 83, in fetch_covid_data
+    raise Exception("Failed to fetch COVID data.")
+Exception: Failed to fetch COVID data.
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:13:05] "[35m[1mGET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-10 HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-04-09/2021-04-10/regionid/2 HTTP/1.1" 200 17926
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DSouth+Scotland%3Bdate%3E%3D2021-04-09%3Bdate%3C%3D2021-04-10&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+ERROR:app:Exception on /combined-data [GET]
+Traceback (most recent call last):
+  File "/Users/aum/Library/Python/3.10/lib/python/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/aum/Library/Python/3.10/lib/python/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/aum/Library/Python/3.10/lib/python/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/aum/Library/Python/3.10/lib/python/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/aum/Desktop/atc/app.py", line 133, in combined_data
+    # Fetch COVID-19 data
+  File "/Users/aum/Desktop/atc/app.py", line 83, in fetch_covid_data
+    return response.json()
+Exception: Failed to fetch COVID data.
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:14:00] "[35m[1mGET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-10 HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-04-09/2021-04-10/regionid/2 HTTP/1.1" 200 17926
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DSouth+Scotland%3Bdate%3E%3D2021-04-09%3Bdate%3C%3D2021-04-10&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+ERROR:app:Exception on /combined-data [GET]
+Traceback (most recent call last):
+  File "/Users/aum/Library/Python/3.10/lib/python/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/aum/Library/Python/3.10/lib/python/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/aum/Library/Python/3.10/lib/python/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/aum/Library/Python/3.10/lib/python/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/aum/Desktop/atc/app.py", line 133, in combined_data
+    # Fetch COVID-19 data
+  File "/Users/aum/Desktop/atc/app.py", line 83, in fetch_covid_data
+    return response.json()
+Exception: Failed to fetch COVID data.
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:14:05] "[35m[1mGET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-10 HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-04-09/2021-04-10/regionid/2 HTTP/1.1" 200 17926
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DSouth+Scotland%3Bdate%3E%3D2021-04-09%3Bdate%3C%3D2021-04-10&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+ERROR:app:Exception on /combined-data [GET]
+Traceback (most recent call last):
+  File "/Users/aum/Library/Python/3.10/lib/python/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/aum/Library/Python/3.10/lib/python/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/aum/Library/Python/3.10/lib/python/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/aum/Library/Python/3.10/lib/python/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/aum/Desktop/atc/app.py", line 133, in combined_data
+    covid_data = fetch_covid_data("region", area_name, from_date, to_date)
+  File "/Users/aum/Desktop/atc/app.py", line 83, in fetch_covid_data
+    return None
+Exception: Failed to fetch COVID data.
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:14:28] "[35m[1mGET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-10 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-04-09/2021-04-10/regionid/2 HTTP/1.1" 200 17926
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DSouth+Scotland%3Bdate%3E%3D2021-04-09%3Bdate%3C%3D2021-04-10&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-04-09%3Bdate%3C%3D2021-04-10&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:14:56] "GET /combined-data?regionid=2&from_date=2021-04-09&to_date=2021-04-10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/aum/Desktop/atc/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2023-09-01/2023-09-10/regionid/3 HTTP/1.1" 200 158702
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+West+England%3Bdate%3E%3D2023-09-01%3Bdate%3C%3D2023-09-10&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dengland%3Bdate%3E%3D2023-09-01%3Bdate%3C%3D2023-09-10&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:22:44] "GET /region-data/3/2023-09-01/2023-09-10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/aum/Desktop/atc/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-12/regionid/1 HTTP/1.1" 200 34960
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+Scotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-12&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-12&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:28] "GET /region-data/1/2021-10-10/2021-10-12 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:33] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:34] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:35] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:35] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:36] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:36] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:37] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:38] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:38] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:39] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:39] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:40] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:41] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:42] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:42] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:44] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:44] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:45] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:32:46] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-11/regionid/1 HTTP/1.1" 200 17699
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+Scotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:33:42] "GET /region-data/1/2021-10-10/2021-10-11 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-11/regionid/1 HTTP/1.1" 200 17699
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+Scotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:33:44] "GET /region-data/1/2021-10-10/2021-10-11 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-11/regionid/1 HTTP/1.1" 200 17699
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+Scotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:33:47] "GET /region-data/1/2021-10-10/2021-10-11 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/aum/Desktop/atc/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 120-526-908
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-11/regionid/1 HTTP/1.1" 200 17699
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+Scotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:35:19] "GET /region-data/1/2021-10-10/2021-10-11 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-11/regionid/1 HTTP/1.1" 200 17699
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+Scotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:35:40] "GET /region-data/1/2021-10-10/2021-10-11 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-11/regionid/1 HTTP/1.1" 200 17699
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+Scotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:36:31] "GET /region-data/1/2021-10-10/2021-10-11 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-11/regionid/1 HTTP/1.1" 200 17699
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+Scotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:36:41] "GET /region-data/1/2021-10-10/2021-10-11 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-11/regionid/1 HTTP/1.1" 200 17699
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+Scotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:36:52] "GET /region-data/1/2021-10-10/2021-10-11 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-11/regionid/1 HTTP/1.1" 200 17699
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+Scotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:44:03] "GET /region-data/1/2021-10-10/2021-10-11 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-11/regionid/1 HTTP/1.1" 200 17699
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+Scotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:46:52] "GET /region-data/1/2021-10-10/2021-10-11 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-11/regionid/1 HTTP/1.1" 200 17699
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+Scotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:47:25] "GET /region-data/1/2021-10-10/2021-10-11 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-11/regionid/1 HTTP/1.1" 200 17699
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+Scotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-11&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:48:27] "GET /region-data/1/2021-10-10/2021-10-11 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-11/2021-10-12/regionid/1 HTTP/1.1" 200 17738
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+Scotland%3Bdate%3E%3D2021-10-11%3Bdate%3C%3D2021-10-12&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-10-11%3Bdate%3C%3D2021-10-12&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:49:48] "GET /region-data/1/2021-10-11/2021-10-12 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-06-11/2021-06-30/regionid/1 HTTP/1.1" 200 330804
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+Scotland%3Bdate%3E%3D2021-06-11%3Bdate%3C%3D2021-06-30&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-06-11%3Bdate%3C%3D2021-06-30&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:50:23] "GET /region-data/1/2021-06-11/2021-06-30 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-12/regionid/5 HTTP/1.1" 200 35648
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DYorkshire%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-12&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dengland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-12&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:56:51] "GET /region-data/5/2021-10-10/2021-10-12 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-12/regionid/13 HTTP/1.1" 200 35817
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DLondon%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-12&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:57:02] "GET /region-data/13/2021-10-10/2021-10-12 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-12/regionid/15 HTTP/1.1" 200 36023
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DEngland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-12&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dengland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-12&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:57:12] "GET /region-data/15/2021-10-10/2021-10-12 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-12/regionid/16 HTTP/1.1" 200 35601
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DScotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-12&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-12&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 16:57:18] "GET /region-data/16/2021-10-10/2021-10-12 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 17:03:25] "[33mGET /region-data/1// HTTP/1.1[0m" 404 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.carbonintensity.org.uk:443
+DEBUG:urllib3.connectionpool:https://api.carbonintensity.org.uk:443 "GET /regional/intensity/2021-10-10/2021-10-15/regionid/1 HTTP/1.1" 200 87131
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dregion%3BareaName%3DNorth+Scotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-15&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3Dscotland%3Bdate%3E%3D2021-10-10%3Bdate%3C%3D2021-10-15&structure=%7B%22date%22%3A%22date%22%2C%22name%22%3A%22areaName%22%2C%22code%22%3A%22areaCode%22%2C%22dailyCases%22%3A%22newCasesByPublishDate%22%2C%22cumulativeCases%22%3A%22cumCasesByPublishDate%22%2C%22dailyDeaths%22%3A%22newDeaths28DaysByPublishDate%22%2C%22cumulativeDeaths%22%3A%22cumDeaths28DaysByPublishDate%22%7D HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2023 17:03:41] "GET /region-data/1/2021-10-10/2021-10-15 HTTP/1.1" 200 -

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Data Viewer</h1>
+
+        <!-- Date selection -->
+        <div class="input-container">
+            <label for="from_date">Start Date:</label>
+            <input type="date" id="from_date">
+        </div>
+
+        <div class="input-container">
+            <label for="to_date">End Date:</label>
+            <input type="date" id="to_date">
+        </div>
+
+        <div class="input-container">
+            <label for="region">Region:</label>
+            <select id="region">
+                <!-- Options will be dynamically populated from the mapping -->
+            </select>
+        </div>
+
+        <button id="fetchData">Get Data</button>
+        
+        <!-- Data display -->
+        <div id="output">
+            <h2>Carbon Intensity Data</h2>
+            <div id="carbon_data"></div>
+            <h2>Covid Data</h2>
+            <div id="covid_data"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
